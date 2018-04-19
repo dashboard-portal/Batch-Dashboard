@@ -1,0 +1,57 @@
+.topbar {
+    height: 100px;    
+    .welcometopbar {
+        align-items: center;
+        background-color: $pDarkColor;
+        display: flex;
+        height: 50%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .logo-container {
+            flex: 1;
+            .logo {
+                background-image: url('https://unbounce-wpengine.netdna-ssl.com/wp-content/themes/unbounce2015/assets/img/unbounce-icon.svg');
+                background-position-y: center;
+                background-repeat: no-repeat;
+                background-size: auto 32px;    
+                height: 50px;
+            }
+        }        
+    }
+    .topmenu {
+        align-items: center;
+        display: flex;
+        font-size: 0.8rem;
+        height: 50%;
+        margin: 0 1rem;
+        .topmenu-item {
+            color: $pDarkColor;
+            cursor: pointer;
+            height: 100%;
+            line-height: 50px;
+
+            padding: 0 1rem;
+            position: relative;
+            text-transform: uppercase;
+            &:hover {
+                color: $sLightColor;
+            }
+            &.selected {
+                color: $sLightColor;
+                font-weight: bold;
+                &:before {
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid  $pDarkColor;
+                    content: '';
+                    height: 0;
+                    left: 50%;
+                    margin-left: -10px;
+                    position: absolute;                    
+                    top: 0;
+                    width: 0;
+                }
+            }
+        }
+    }
+}
