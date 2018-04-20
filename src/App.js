@@ -6,17 +6,25 @@ import {
     HashRouter as Router
 } from 'react-router-dom'
 import {
+    Provider
+} from 'react-redux';
+import Store from './redux/Store';
+import {
     CONTAINER_ROUTES
 } from './Router'
 
 export default class extends React.Component {
     render () {
-        return (           
-            <Router>
-                {
-                    this._app()
-                }
-            </Router>
+        return (
+            <Provider
+                store={Store}
+            >
+                <Router>
+                    {
+                        this._app()
+                    }
+                </Router>
+            </Provider>
         );
     }
     _app () {
