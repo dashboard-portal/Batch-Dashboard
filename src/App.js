@@ -35,7 +35,7 @@ export default class extends React.Component {
                 {
                     this._top_bar()
                 }
-                {
+                {                    
                     this._main()
                 }
                                     
