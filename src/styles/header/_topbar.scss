@@ -2,7 +2,7 @@
     height: 100px;    
     .welcometopbar {
         align-items: center;
-        background-color: $pDarkColor;
+        background-color: $mainColor600;
         display: flex;
         height: 50%;
         padding-left: 1rem;
@@ -25,7 +25,7 @@
         height: 50%;
         margin: 0 1rem;
         .topmenu-item {
-            color: $pDarkColor;
+            color: $mainColor600;
             cursor: pointer;
             height: 100%;
             line-height: 50px;
@@ -34,15 +34,15 @@
             position: relative;
             text-transform: uppercase;
             &:hover {
-                color: $sLightColor;
+                color: $altOneColor500;
             }
             &.selected {
-                color: $sLightColor;
+                color: $altOneColor500;
                 font-weight: bold;
                 &:before {
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
-                    border-top: 10px solid  $pDarkColor;
+                    border-top: 10px solid  $mainColor600;
                     content: '';
                     height: 0;
                     left: 50%;

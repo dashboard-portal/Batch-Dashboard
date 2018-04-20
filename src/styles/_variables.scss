@@ -1,16 +1,44 @@
-$pColor: #1976d2;
-$pLightColor: #63a4ff;
-$pDarkColor: #004ba0;
+/* ____ ___  _     ___  ____  
+  / ___/ _ \| |   / _ \|  _ \ 
+ | |  | | | | |  | | | | |_) |
+ | |__| |_| | |__| |_| |  _ < 
+  \____\___/|_____\___/|_| \_\
+*/
+$mainColor600: #2C6993; // Primary Button Hover
+$mainColor500: #3F83AA; // Primary Buttons
+$mainColor400: #659CBB;
+$mainColor300: #8CB5CC;
+$mainColor200: #B2CDDD;
+$mainColor100: #D9E6EE; // Grid Striping, Backgrounds, Module Borders
 
-$sColor: #c62828;
-$sLightColor: #ff5f52;
-$sDarkColor: #8e0000;
+$altOneColor600: #F09822;
+$altOneColor500: #F2A429;
+$altOneColor400: #F5B654;
+$altOneColor300: #F7C87F;
+$altOneColor200: #FADBA9;
+$altOneColor100: #FCEDD4;
 
-$pTextColor: #ffffff;
-$sTextColor: #ffffff;
+$altTwoColor600: #2E823C;
+$altTwoColor500: #409951;
+$altTwoColor400: #67AE75;
+$altTwoColor300: #8DC297;
+$altTwoColor200: #B3D7BA;
+$altTwoColor100: #D9EBDC;
 
-$disableBgColor: #E0E0E0;
-$disableTextColor: #ffffff;
 
+$greyColor500: #333333;
+$greyColor400: #666666;
+$greyColor300: #999999;
+$greyColor200: #CCCCCC;
+
+$blackColor600: #000000;
+$whiteColor: #FFFFFF;
+$redColor: #CC0000; // Form Errors
+/*_____ ___  _   _ _____ 
+ |  ___/ _ \| \ | |_   _|
+ | |_ | | | |  \| | | |  
+ |  _|| |_| | |\  | | |  
+ |_|   \___/|_| \_| |_|  
+*/
 $stressFontFamily: 'Open Sans', sans-serif;
 $normalFontFamily: 'Roboto', sans-serif;
