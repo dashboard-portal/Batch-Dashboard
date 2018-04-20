@@ -36,9 +36,9 @@ or with **"yarn"**
 yarn start
 ```
 
+### XTIME Branding
+For xtime branding refer to [this guide](https://confluence.xtime.com/x/-AHZAg)
+
 ## License
 
 MIT.
-
-### XTIME Branding
-For xtime branding refer to [this guide](https://confluence.xtime.com/x/-AHZAg)
