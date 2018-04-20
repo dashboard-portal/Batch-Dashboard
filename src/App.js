@@ -8,7 +8,7 @@ import {
 import {
     Provider
 } from 'react-redux';
-import Store from './Store';
+import Store from './redux/Store';
 import {
     CONTAINER_ROUTES
 } from './Router'

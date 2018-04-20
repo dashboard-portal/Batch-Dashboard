@@ -6,8 +6,8 @@ import {
     createEpicMiddleware
 } from 'redux-observable';
 
-import BaseEpic from './bases/Base.epic';
-import BaseReducer from './bases/Base.reducer';
+import BaseEpic from './Base.epic';
+import BaseReducer from './Base.reducer';
 
 const epicMiddleware = createEpicMiddleware(BaseEpic);
 
