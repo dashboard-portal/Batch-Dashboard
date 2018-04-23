@@ -27,4 +27,3 @@ or with **"yarn"**
 ```sh
 yarn start
 ```
-### Jenkins
