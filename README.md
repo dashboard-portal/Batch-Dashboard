@@ -27,7 +27,3 @@ or with **"yarn"**
 ```sh
 yarn start
 ```
-
-## License
-
-MIT.
