@@ -6,12 +6,12 @@ import {
     createEpicMiddleware
 } from 'redux-observable';
 
-import BaseEpic from './Base.epic';
-import BaseReducer from './Base.reducer';
+import baseEpic from './base.epic';
+import baseReducer from './base.reducer';
 
-const epicMiddleware = createEpicMiddleware(BaseEpic);
+const epicMiddleware = createEpicMiddleware(baseEpic);
 
 export default createStore(
-    BaseReducer,
+    baseReducer,
     applyMiddleware(epicMiddleware)
 );

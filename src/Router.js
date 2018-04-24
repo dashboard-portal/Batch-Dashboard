@@ -1,4 +1,4 @@
-import BatchDashboard from './containers/batchDashboard/batchDashboard.component'
+import BatchDashboard from './containers/batchDashboard/BatchDashboard.container'
 /**
  * Provisional info in MENU_ROUTES
  * TODO: Add the real menu options

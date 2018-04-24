@@ -8,19 +8,19 @@ import {
 import {
     Provider
 } from 'react-redux';
-import Store from './redux/Store';
+import appStore from './redux/Store';
 import {
     MainWrap
 } from './components/mainWrap/mainWrap';
 import {
     CONTAINER_ROUTES
-} from './Router'
+} from './Router';
 
 export default class extends React.Component {
     render () {
         return (
             <Provider
-                store={Store}
+                store={ appStore }
             >
                 <Router>
                     { this._app() }
