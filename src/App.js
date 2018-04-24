@@ -8,7 +8,7 @@ import {
 import {
     Provider
 } from 'react-redux';
-import appStore from './redux/Store';
+import appStore from './redux/store';
 import {
     MainWrap
 } from './components/mainWrap/mainWrap';
