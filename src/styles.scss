@@ -8,5 +8,7 @@ body {
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    border-right: 10px solid $blackColor600;
+    border: 10px solid $blackColor600;
+    border-top: none;
+    border-bottom: none;
 }
