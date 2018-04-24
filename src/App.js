@@ -10,6 +10,9 @@ import {
 } from 'react-redux';
 import Store from './redux/Store';
 import {
+    MainWrap
+} from './components/mainWrap/mainWrap';
+import {
     CONTAINER_ROUTES
 } from './Router'
 
@@ -20,9 +23,7 @@ export default class extends React.Component {
                 store={Store}
             >
                 <Router>
-                    {
-                        this._app()
-                    }
+                    { this._app() }
                 </Router>
             </Provider>
         );
@@ -30,80 +31,31 @@ export default class extends React.Component {
     _app () {
         return (
             <div
-
+                className="main"
             >
-                {
-                    this._top_bar()
-                }
-                {                    
-                    this._main()
-                }
-                                    
-            </div>     
-        );
-    }
-    _top_bar () {
-        return (
-            <div
-                className='topbar'
-            >
-                <div
-                    className='welcometopbar'
-                >
-                    <div
-                        className='logo-container'
-                    >
-                        <div
-                            className='logo'
-                        ></div>
-                    </div>
-                    <div>
-                        
-                    </div>
-                </div>
-                <div
-                    className='topmenu'
-                >
-                    <div
-                        className='topmenu-item'
-                    >
-                        Home
-                    </div>
-                    <div
-                        className='topmenu-item selected'
-                    >
-                        Images
-                    </div>
-                    <div
-                        className='topmenu-item'
-                    >
-                        Lectures
-                    </div>
-                </div>
+                <MainWrap/>
+                { this._main() }
             </div>
         );
     }
     _main () {
         return (
-            <div>
+            <div className='dashboard-body'>
                 <Switch>
                     <Redirect
                         exact
                         from='/'
                         to='/batch'
                     />
-                    {
-                        CONTAINER_ROUTES.map(
-                            (route, index) => (
-                                <Route
-                                    exact
-                                    key={index}
-                                    path={route.path}                            
-                                    component={route.component}
-                                />
-                            )
-                        )
-                    }
+                    { CONTAINER_ROUTES.map(
+                        (route, index) =>
+                            <Route
+                                exact
+                                key={index}
+                                path={route.path}                            
+                                component={route.component}
+                            />
+                    ) }
                 </Switch> 
             </div>
         );
