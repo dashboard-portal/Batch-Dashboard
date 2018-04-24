@@ -1,0 +1,12 @@
+.main {
+    margin: 0;
+    border: 5px solid $blackColor600;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    .dashboard-body{
+        padding: 20px;
+        min-height: 700px;
+        display: flex;
+    }
+}

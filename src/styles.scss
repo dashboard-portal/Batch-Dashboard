@@ -1,9 +1,12 @@
 @import './styles/variables';
-@import './styles/header/topbar';
+@import './styles/main';
+@import './styles/components/mainWrap/mainWrap';
+@import './styles/components/mainWrap/footer';
 
 body {
     font-family: $normalFontFamily;
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    border-right: 10px solid $blackColor600;
 }
