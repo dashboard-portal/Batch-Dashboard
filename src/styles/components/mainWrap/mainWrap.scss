@@ -1,0 +1,56 @@
+.topbar {
+    height: 60px;
+    .welcometopbar {
+        align-items: center;
+        background-color: $blackColor600;
+        display: flex;
+        height: 50%;
+        padding-left: 1rem;
+        .logo-container {
+            text-align: right;
+            height: 100%;
+            border-left: 1px solid #434242; 
+            flex-basis: auto;
+            .logo {
+                height: 18px;
+                margin: 5px 0 5px 15px;
+            }
+        }        
+    }
+    .topmenu {
+        align-items: center;
+        display: flex;
+        font-size: 0.8rem;
+        height: 50%;
+        margin: 0 1rem;
+        .topmenu-item {
+            color: $mainColor600;
+            cursor: pointer;
+            height: 100%;
+            line-height: 50px;
+
+            padding: 0 1rem;
+            position: relative;
+            text-transform: uppercase;
+            &:hover {
+                color: $altOneColor500;
+            }
+            &.selected {
+                color: $altOneColor500;
+                font-weight: bold;
+                &:before {
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid  $blackColor600;
+                    content: '';
+                    height: 0;
+                    left: 50%;
+                    margin-left: -10px;
+                    position: absolute;                    
+                    top: 0;
+                    width: 0;
+                }
+            }
+        }
+    }
+}

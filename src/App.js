@@ -13,6 +13,9 @@ import {
     MainWrap
 } from './components/mainWrap/mainWrap';
 import {
+    Footer
+} from './components/mainWrap/footer';
+import {
     CONTAINER_ROUTES
 } from './Router';
 
@@ -35,6 +38,7 @@ export default class extends React.Component {
             >
                 <MainWrap/>
                 { this._main() }
+                <Footer/>
             </div>
         );
     }

@@ -1,9 +1,14 @@
 @import './styles/variables';
-@import './styles/header/topbar';
+@import './styles/main';
+@import './styles/components/mainWrap/mainWrap';
+@import './styles/components/mainWrap/footer';
 
 body {
     font-family: $normalFontFamily;
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    border: 10px solid $blackColor600;
+    border-top: none;
+    border-bottom: none;
 }
