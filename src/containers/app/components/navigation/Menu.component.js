@@ -6,10 +6,19 @@ import {
 class Menu extends React.Component {
     render () {
         return (
-            <div className='topmenu'>
-                { MENU_ROUTES.map( (menuitem, index) => 
+            <div
+                className='ds-menu'
+            >
+                { [{
+                    name: 'Batch'
+                }, {
+                    name: 'Consumer',
+                    selected: true
+                }, {
+                    name: 'Marketing'
+                }].map( (menuitem, index) => 
                     <div
-                        className='topmenu-item'
+                        className={`ds-menu-item ${menuitem.selected ? 'selected' : ''}`}
                         key={`menuitem-${index}`}
                     >
                         { menuitem.name }

@@ -1,7 +1,10 @@
 @import './styles/variables';
 @import './styles/app-wrap';
 
-@import './styles/components/app-wrap/Header.component';
+@import './styles/components/app-wrap/_Navigation.component.scss';
+@import './styles/components/app-wrap/navigation/_Header.component.scss';
+@import './styles/components/app-wrap/navigation/_Menu.component.scss';
+
 @import './styles/components/app-wrap/Footer.component';
 
 body {

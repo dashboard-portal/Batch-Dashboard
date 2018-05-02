@@ -4,12 +4,17 @@ import Header from './navigation/Header.component';
 import Menu from './navigation/Menu.component';
 
 class Navigation extends React.Component {    
-    render () {
+    constructor (props) {
+        super(props);
+    }
+    render () {        
         return (
-            <React.Fragment>
+            <div
+
+            >
                 <Header/>
                 <Menu/>
-            </React.Fragment>
+            </div>
         );
     }
 }

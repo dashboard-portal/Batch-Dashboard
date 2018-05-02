@@ -9,8 +9,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: BUILD,
-        filename: 'bundle.js',
-        publicPath: '/'
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -32,7 +31,9 @@ module.exports = {
                 })
             },
             {
-                test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+                test: [
+                    /\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/
+                ],
                 use: {
                     loader: 'url-loader',
                     options: {
@@ -49,10 +50,10 @@ module.exports = {
             }
         ]
     },
-    devServer: {
-        historyApiFallback: true,
-    },
     plugins: [
+        new CleanWebpackPlugin([
+            'build/static'
+        ]),
         new ExtractTextPlugin({
             filename: 'bundle.css'
         }),
@@ -60,5 +61,5 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         })
-    ]    
+    ]
 };
