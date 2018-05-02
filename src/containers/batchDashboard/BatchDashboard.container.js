@@ -9,5 +9,4 @@ class BatchDashboard extends React.Component {
         );
     }
 }
-
 export default BatchDashboard;

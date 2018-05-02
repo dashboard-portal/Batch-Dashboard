@@ -1,14 +1,15 @@
 @import './styles/variables';
-@import './styles/main';
-@import './styles/components/mainWrap/mainWrap';
-@import './styles/components/mainWrap/footer';
+@import './styles/app-wrap';
+
+@import './styles/components/app-wrap/Header.component';
+@import './styles/components/app-wrap/Footer.component';
 
 body {
+    border: 10px solid $blackColor600;
+    border-bottom: none;
+    border-top: none;
     font-family: $normalFontFamily;
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    border: 10px solid $blackColor600;
-    border-top: none;
-    border-bottom: none;
 }
