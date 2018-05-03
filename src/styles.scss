@@ -1,21 +1,27 @@
 @import './styles/variables';
+@import './styles/mixins/basic.scss';
+@import './styles/mixins/icons.scss';
+
 @import './styles/containers/app/_Application.scss';
 
-@import './styles/containers/app/_Header.component.scss';
-@import './styles/containers/app/header/_TopBar.component.scss';
-@import './styles/containers/app/header/_Navigation.component.scss';
-@import './styles/containers/app/header/navigation/_PortalSelector.component.scss';
-@import './styles/containers/app/header/navigation/_Menu.component.scss';
-@import './styles/containers/app/header/navigation/menu/_Item.component.scss';
+@import './styles/containers/app/Header.component.scss';
+@import './styles/containers/app/header/TopBar.component.scss';
+@import './styles/containers/app/header/Navigation.component.scss';
+@import './styles/containers/app/header/navigation/PortalSelector.component.scss';
+@import './styles/containers/app/header/navigation/Menu.component.scss';
+@import './styles/containers/app/header/navigation/menu/Item.component.scss';
 
 @import './styles/containers/app/Main.component';
 @import './styles/containers/app/Footer.component';
+
+@import './styles/components/icons.scss';
 
 body {
     border: 14px solid $greyColor600;
     border-bottom: none;
     border-top: none;
-    font-family: $normalFontFamily;
+    font-size: 62.5%;
+    font-family: $normalFontFamily;    
     margin: 0;
     overflow-y: auto;
     overflow-x: hidden;

@@ -1,0 +1,40 @@
+// Bases
+.ds-icon {
+    cursor: default;
+    &.x16 { @include icon(16px); }
+    &.x18 { @include icon(18px); }
+    &.x24 { @include icon(24px); }
+    &.x32 { @include icon(32px); }
+    &.x36 { @include icon(36px); }
+    &.x48 { @include icon(48px); }
+    &.x64 { @include icon(64px); }
+}
+.ds-icon-bordered {
+    cursor: default;    
+    &.x16 { @include icon-bordered(16px); }
+    &.x18 { @include icon-bordered(18px); }
+    &.x24 { @include icon-bordered(24px); }
+    &.x32 { @include icon-bordered(32px); }
+    &.x36 { @include icon-bordered(36px); }
+    &.x48 { @include icon-bordered(48px); }
+    &.x64 { @include icon-bordered(64px); }
+}
+// Specifics
+.ds-icon-portal-trigger {
+    color: $altOneColor600;
+}
+.ds-icon-spinner {    
+    color: $whiteColor;
+    -webkit-animation: rotation 2s infinite linear;
+}
+.ds-icon-close-element {
+    color: $whiteColor;
+}
+.ds-icon-toggle-menu {
+    color: $whiteColor;
+    cursor: pointer;        
+}
+.ds-icon-close-menu {
+    color: $whiteColor;
+    padding: 10px;
+}

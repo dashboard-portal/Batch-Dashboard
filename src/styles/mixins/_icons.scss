@@ -1,0 +1,38 @@
+@mixin icon($size) {
+    height: $size;
+    font-size: $size;
+    width: $size;
+}
+@mixin icon-bordered(
+    $size,
+    $borderWidth: 1px
+) {
+    $noBorderSize: $size - $borderWidth*2;
+    border: solid $borderWidth;
+    height: $noBorderSize;
+    font-size: $noBorderSize*0.67;
+    text-align: center;
+    width: $noBorderSize;
+    &::before {
+        line-height: $size;
+    }
+    &.rounded { 
+        &-full {
+            border-radius: 50%;
+        }
+        &-shy {
+            border-radius: $noBorderSize*0.17;
+        }
+        &-sharp {
+            border-radius: $noBorderSize*0.34;
+        }
+    }
+    &.no-edge-space {
+        font-size: $noBorderSize;
+    }
+    &.is-button {
+        @include plain-button;
+        height: $size;
+        width: $size;
+    }
+}

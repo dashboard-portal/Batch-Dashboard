@@ -1,17 +1,16 @@
 .ds-menu-item {
+    @include font-size(1.1);
     color: $greyColor300;
     display: inline-block;
     height: 2.5rem;
-    letter-spacing: -1px;
     line-height: 2.5rem;
-    font-size: 18px;
     font-weight: 400;
     padding: 0 20px;
     text-align: center;
     cursor: pointer;
     position: relative;       
     &:hover {
-        color: $greyColor400;
+        color: $greyColor500;
     }
     &.selected {
         color: $altOneColor500;

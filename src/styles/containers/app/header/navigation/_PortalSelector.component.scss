@@ -1,7 +1,28 @@
 .ds-portal-selector {
+    
     background-color: $greyColor600;
     border-radius: 0 0 5px 0;
-    height: 35px;
+    height: 35px;       
     position: relative;
-    width: 150px;   
+    width: 150px;
+    .box {        
+        align-items: center;
+        background-color: $greyColor500;
+        border-radius: 5px;
+        display: flex;
+        padding: 3px 5px;
+        margin: 3px 10px 0 0;        
+        .name {
+            @include font-size(0.8);
+            color: $whiteColor;
+            cursor: pointer;
+            flex: 1;            
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding-left: 1rem;
+            &:hover {
+                color: $altOneColor600;
+            }
+        }
+    }    
 }
