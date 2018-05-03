@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js --progress --colors --p",
-    "start": "webpack-dev-server -d --host 0.0.0.0",
+    "start": "webpack-dev-server -d --open --host 0.0.0.0",
     "test": "jest"
   },
   "repository": {
