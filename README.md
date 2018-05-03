@@ -39,6 +39,20 @@ yarn start
 ### XTIME Branding
 For xtime branding refer to [this guide](https://confluence.xtime.com/x/-AHZAg)
 
+### Docker Container for development
+This repo contains to files to start a development container to avoid installing the needed dependencies in a local environment. To use a container for development follow the instructions:
+
+1. From the root directory of the project build the image using `docker-compose`
+```sh
+$ docker-compose build
+```
+2. Once the project image is successfully created you can start a container with that image as base
+```sh
+$ docker-compose up
+```
+This by default starts the container with the application in the port 8080 in your local machine. Visit [http://localhost:8080](http://localhost:8080)
+3. Modify the source code from you local machine, the changes will be reflected in the container.
+
 ## License
 
 MIT.
