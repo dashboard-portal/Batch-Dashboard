@@ -1,0 +1,38 @@
+.ds-menu-item {
+    color: $greyColor300;
+    display: inline-block;
+    height: 2.5rem;
+    letter-spacing: -1px;
+    line-height: 2.5rem;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;       
+    &:hover {
+        color: $greyColor400;
+    }
+    &.selected {
+        color: $altOneColor500;
+        cursor: default;          
+        font-weight: 600;
+        // Internal Rounded Borders
+        &::before, &::after {
+            background: url('./images/navigation/tab-selected-curtain.png') no-repeat;
+            content: '';
+            height: 100%;
+            position: absolute;                
+            width: 50%;
+            z-index: -1;
+        }
+        &::before {                
+            background-position: left bottom;
+            left: 0
+        }
+        &::after {
+            background-position: right bottom;
+            right: 0;
+        }
+    }
+}

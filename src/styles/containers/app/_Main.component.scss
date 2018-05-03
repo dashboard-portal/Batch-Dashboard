@@ -1,0 +1,23 @@
+.ds-main {    
+    padding: 20px;
+    min-height: 700px;
+    position: relative;
+    // Internal Rounded Borders
+    &::before, &::after {
+        content: '';
+        background: $whiteColor;        
+        bottom: 0;
+        width: 5px;        
+        position: absolute;        
+    }
+    &::before {
+        border-radius: 5px 0 0 5px;
+        left: -5px;
+        top: -15px;
+    }
+    &::after {
+        border-radius: 0 5px 5px 0;
+        right: -5px;
+        top: -55px;
+    }
+}

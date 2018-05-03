@@ -11,7 +11,9 @@ import {
 class Main extends React.Component {
     render () {
         return (
-            <main className='main-content'>
+            <main
+                className='ds-main'
+            >
                 <Switch>
                     <Redirect
                         exact

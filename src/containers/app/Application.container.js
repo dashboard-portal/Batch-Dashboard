@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from './components/Navigation.component';
-import Footer from './components/Footer.component';
+import Header from './components/Header.component';
 import Main from './components/Main.component';
+import Footer from './components/Footer.component';
 import {
     CONTAINER_ROUTES
 } from '../../Router';
@@ -15,9 +15,9 @@ class App extends React.Component {
     render () {
         return (
             <div
-                className="ds-app-wrap"
+                className="ds-application"
             >
-                <Navigation/>
+                <Header/>
                 <Main/>
                 <Footer/>
             </div>

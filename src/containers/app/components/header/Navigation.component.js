@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from './navigation/Header.component';
+import PortalSelector from './navigation/PortalSelector.component';
 import Menu from './navigation/Menu.component';
 
 class Navigation extends React.Component {    
@@ -10,9 +10,9 @@ class Navigation extends React.Component {
     render () {        
         return (
             <div
-
+                className='ds-navigation'
             >
-                <Header/>
+                <PortalSelector/>
                 <Menu/>
             </div>
         );

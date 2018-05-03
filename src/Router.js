@@ -4,8 +4,11 @@ import BatchDashboard from './containers/batchDashboard/BatchDashboard.container
  * TODO: Add the real menu options
  */
 export const MENU_ROUTES = [{
-    id: 1,
-    name: 'Dashboard'
+    path: '/batch',
+    text: 'Batch'
+}, {
+    path: '/test',
+    text: 'Test'
 }];
 export const CONTAINER_ROUTES = [{
     path: '/batch',
