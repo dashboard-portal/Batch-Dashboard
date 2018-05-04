@@ -3,9 +3,13 @@ import {
 } from 'redux-observable';
 
 import {
-    fetchSchedulers
+    fetchSchedulers,
+    fetchJobs,
+    fetchTriggers
 } from '../containers/batchDashboard/batchDashboard.epic';
 
 export default combineEpics(
-    fetchSchedulers
+    fetchSchedulers,
+    fetchJobs,
+    fetchTriggers
 );
