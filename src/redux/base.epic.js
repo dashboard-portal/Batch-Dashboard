@@ -2,6 +2,10 @@ import {
     combineEpics
 } from 'redux-observable';
 
-export default combineEpics(
+import {
+    fetchSchedulers
+} from '../containers/batchDashboard/batchDashboard.epic';
 
+export default combineEpics(
+    fetchSchedulers
 );

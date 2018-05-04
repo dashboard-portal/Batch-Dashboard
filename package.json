@@ -56,5 +56,6 @@
     "redux": "^3.7.2",
     "redux-observable": "^0.18.0",
     "rxjs": "^5.5.10"
-  }
+  },
+  "proxy": "http://batadm-01sc8:6060"
 }

@@ -11,3 +11,7 @@
 
 # misc
 yarn.lock
+
+# IDES
+.vscode
+.idea

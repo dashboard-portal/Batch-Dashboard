@@ -1,0 +1,1 @@
+export const BASE_PATH = `${document.location.protocol}//${document.location.host}/xbatchadmin/rest`;
