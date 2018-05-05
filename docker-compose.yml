@@ -1,0 +1,11 @@
+version: "3"
+services:
+  batchdashboard:
+    build: .                                                 # Dockerfile location
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/home/node/Batch-Dashboard                         # Bind mount
+      - nodemodules:/home/node/Batch-Dashboard/node_modules  # Volume to map the node_modules repository
+volumes:
+  nodemodules:
